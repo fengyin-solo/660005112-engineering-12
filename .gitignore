@@ -159,6 +159,8 @@ CMakeFiles/
 CMakeCache.txt
 compile_commands.json
 Makefile
+# 根目录的 Makefile 是本地开发统一入口, 需要入库
+!/Makefile
 makedep*
 libtool
 aclocal.m4
@@ -234,3 +236,8 @@ sandbox/
 *.pid
 *.seed
 *.pid.lock
+
+# =========================
+# Devflow runtime (pid/logs)
+# =========================
+.run/
