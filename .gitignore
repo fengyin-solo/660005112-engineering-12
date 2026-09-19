@@ -234,3 +234,14 @@ sandbox/
 *.pid
 *.seed
 *.pid.lock
+
+# =========================
+# Project exceptions (keep tracked)
+# =========================
+!Makefile
+!package-lock.json
+
+# =========================
+# Local dev pipeline artifacts
+# =========================
+.dev/

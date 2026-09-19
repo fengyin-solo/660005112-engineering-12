@@ -11,6 +11,11 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 MODULATION_TYPES = ["AM", "FM", "BPSK", "QPSK", "16QAM"]
 
 
+@app.get("/api/health")
+def health():
+    return {"status": "ok"}
+
+
 class GenerateRequest(BaseModel):
     modulation: str = "QPSK"
     samples: int = 1024
